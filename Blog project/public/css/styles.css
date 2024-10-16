@@ -1,5 +1,5 @@
 /* Universal reset styles */
-* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -111,13 +111,19 @@ textarea {
 }
 
 /* Page-specific styles */
-header {
+header,
+footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #333;
   color: white;
   padding: 1rem;
+  width: 100%;
+}
+
+header {
+  justify-content: space-between;
 }
 
 header a {
@@ -140,16 +146,17 @@ form {
 }
 
 form input,
-form textarea {
+form textarea,
+form button {
   margin: 0.5rem 0;
   padding: 0.5rem;
 }
 
 form button {
-  padding: 0.7rem;
   background-color: #333;
   color: white;
   border: none;
+  padding: 0.7rem;
 }
 
 ul {
@@ -173,26 +180,6 @@ ul li form button {
   border-radius: 5px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
 #green {
   background-color: green;
 }
-
-/* p a {
-  color: #000;
-  text-decoration: none;
-  padding: 0.5rem;
-  background-color: #d3d3d3;
-  border-radius: 5px;
-} */
